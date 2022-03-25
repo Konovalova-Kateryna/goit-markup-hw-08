@@ -34,9 +34,6 @@
     transition-duration: $transition-time;
     transition-timing-function: $transition-function;
   }
-  // & + & {
-  //   margin-left: 8px;
-  // }
 }
 
 .cards {
@@ -61,19 +58,19 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc(100% / 3 - 30px);
   }
-
-  // margin-left: 30px;
-  // margin-top: 30px;
 }
+
 .overlay {
   position: relative;
   overflow: hidden;
 }
+
 .card__container {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
 }
+
 .card__link {
   text-decoration: none;
   display: block;
