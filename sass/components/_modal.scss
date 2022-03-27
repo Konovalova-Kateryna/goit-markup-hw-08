@@ -158,10 +158,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
+
   color: $primary-text-color;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.71;
@@ -176,6 +177,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.chek__text {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 1.17;
 }
 .checkbox__icon {
   fill: transparent;

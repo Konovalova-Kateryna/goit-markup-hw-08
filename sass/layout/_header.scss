@@ -1,8 +1,11 @@
 .header {
   border-bottom: 1px solid #ececec;
   .logo {
-    padding: 26px 0;
+    padding: 16px 0;
     margin-right: 88px;
+    @media screen and (min-width: 768px) {
+      padding: 26px 0;
+    }
     @media screen and (min-width: 1200px) {
       padding: 24px 0;
       margin-right: 73px;
@@ -106,20 +109,31 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding: 5px 0;
+
   align-items: center;
 
   transition-property: color;
   transition-duration: $transition-time;
-  transition-timing-function: transition-function;
+  transition-timing-function: $transition-function;
 
   &:hover,
   &:focus,
   &:active {
     color: $accent-color;
   }
+  &.mail {
+    padding-top: 20px;
+    margin-bottom: 10px;
+  }
+  &.tel {
+    padding-bottom: 20px;
+  }
+
   @media screen and (min-width: 1200px) {
-    padding: 32px 0;
+    &.mail,
+    &.tel {
+      padding: 32px 0;
+    }
   }
 }
 .link-icon {

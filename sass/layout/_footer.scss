@@ -19,7 +19,11 @@
   font-size: 14px;
   line-height: 1.17;
   width: 231px;
-  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 .foot__item:not(:last-child) {
   margin-bottom: 10px;
@@ -57,10 +61,14 @@
   }
 }
 .desk-footer {
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -76,14 +84,23 @@
 }
 .adress__section {
   text-align: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
 .links-section {
   text-align: center;
-  margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .footer-links-text {
@@ -167,6 +184,7 @@
   @media screen and (min-width: 1200px) {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
@@ -197,8 +215,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     }
   }
-  @media screen and (max-width: 1200px) {
-    margin-left: auto;
+  @media screen and (min-width: 1200px) {
     margin-right: auto;
   }
 }
@@ -211,4 +228,7 @@
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }

@@ -40,7 +40,6 @@
   margin-bottom: -30px;
 
   @media screen and (min-width: 768px) {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
@@ -52,11 +51,11 @@
 .card {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
-    flex-basis: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
-    flex-basis: calc(100% / 3 - 30px);
+    width: calc(100% / 3 - 30px);
   }
 }
 
@@ -69,11 +68,14 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+  flex-grow: 1;
 }
 
 .card__link {
   text-decoration: none;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: $primary-text-color;
   overflow: hidden;
   transition-property: box-shadow;
@@ -96,10 +98,12 @@
   width: 100%;
   height: 100%;
 
+  overflow-y: auto;
+
   background-color: rgba(33, 150, 243, 0.9);
   color: $accent-white-color;
   padding: 63px 24px;
-  transform: translatey(100%);
+  transform: translatey(101%);
   transition-property: transform;
   transition-duration: $transition-time;
   transition-timing-function: $transition-function;
